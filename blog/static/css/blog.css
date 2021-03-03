@@ -2,13 +2,14 @@ h1 a, h2 a {
     color: #f17e0a;
 }
 .page-header {
-    background-color: #c20092;
+    background-color: #169deb;
+    text-align: center;
     margin-top: 0;
-    padding: 20px 20px 20px 30px;
+    padding: 20px 30px 20px 30px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #f3f7f3;
+    color: #f6f8f6;
     font-size: 40pt;
     text-decoration: none;
 }
@@ -53,4 +54,26 @@ h1 a, h2 a {
     margin-top: 0;
     padding: 20px;
     vertical-align: -20px;
+}
+
+.top-banner{
+    background-color: #f4f806;
+    vertical-align: top;
+    margin-top: 0;
+    padding: 20px 20px 20px 30px;
+	display: flex;
+	flex-wrap:wrap;
+}
+.top-banner li {
+    font-size: 20pt;
+    color: #f4f806;
+	width: calc(100%/2);/*←画像を横に4つ並べる場合*/
+	padding:0 320px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.top-banner li img {
+    color: rgb(244, 247, 247);
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+	border:solid 1px #ccc; /*←画像を1pxのグレーの枠線で囲む指定の場合*/
 }

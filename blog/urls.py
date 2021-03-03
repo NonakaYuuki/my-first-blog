@@ -7,4 +7,5 @@ urlpatterns = [
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     path('tokyo/bunkyo/',views.bunkyo_list,name='bunkyo_list'),
     path('tokyo/bunkyo/juntendo/',views.bunkyo_juntendo,name='bunkyo_juntendo'),
+    path('tokyo/bunkyo/todai/',views.bunkyo_todai,name='bunkyo_todai'),
 ]
